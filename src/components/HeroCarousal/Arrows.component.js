@@ -6,11 +6,11 @@ export const NextArrow = (props) => {
         style={{ 
           ...props.style, 
           backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent black
-          position: "absolute", // position the arrow
-          right: "0px", // position on the right side
-          top: "0px", // position from the top
+           // position the arrow
+          right: "-50px", // position on the right side
+          top: "200px", // position from the top
           bottom: "0px", // position from the bottom
-          margin: "auto", // center vertically
+          marginRight:"-50px", // center vertically
           width: "50px", // square shape
           height: "50px" // square shape
         }}
@@ -28,11 +28,11 @@ export const PrevArrow = (props) => {
         style={{ 
           ...props.style, 
           backgroundColor: "rgba(0, 0, 0, 0.5)", // semi-transparent black
-          position: "absolute", // position the arrow
-          left: "0px", // position on the left side
-          top: "0px", // position from the top
+           // position the arrow
+          right: "-50px", // position on the right side
+          top: "200px", // position from the top
           bottom: "0px", // position from the bottom
-          margin: "auto", // center vertically
+          marginLeft:"-49px", // center vertically
           width: "50px", // square shape
           height: "50px" // square shape
         }}
