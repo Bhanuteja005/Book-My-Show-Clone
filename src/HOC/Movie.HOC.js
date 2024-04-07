@@ -1,10 +1,10 @@
 import React from "react";
 import MovieLayout from "../layouts/Movie.layout";
-import Home from "../pages/Home.page";
+import Movie from "../pages/Movie.page";
 const MovieHOC = ({ children }) => {
   return (
     <MovieLayout>
-      <Home />
+      <Movie />
     </MovieLayout>
   );
 }
