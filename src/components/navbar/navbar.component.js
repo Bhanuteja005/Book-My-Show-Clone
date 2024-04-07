@@ -37,9 +37,9 @@ return (
             alt="logo"
             className="w-full h-full" />
       </div>
-      <div className="w-full flex items-center bg-white gap-3 px-3 py-2 rounded-sm">
+      <div className=" w-full flex items-center bg-white gap-3 px-3 py-2 rounded-sm">
          <BiSearch />
-         <input type="search" className="w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
+         <input type="search" className="text-navcol-900 w-full focus:outline-none" placeholder="Search for movies, events, plays, sports and activities" />
       </div>
    </div>
 
@@ -51,7 +51,7 @@ return (
       Hyderabad
       <BiChevronDown />
    </span>
-   <button className="bg-navcol-900 text-white text-sm rounded px-2 py-1">
+   <button className="bg-navcol-600 text-white text-sm rounded px-2 py-1">
    Sign in
    </button>
    <div className="w-8 h-8 text-white">
