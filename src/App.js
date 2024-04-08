@@ -1,17 +1,22 @@
 import { Route, Routes } from 'react-router-dom';
+
 //HOC
 import DefaultHOC from './HOC/Default.HOC';
 import MovieHOC from './HOC/Movie.HOC';
+
 //pages
 import Home from './pages/Home.page';
 import Movie from './pages/Movie.page';
 import Plays from './pages/Plays.page';
+
 //axios
-import { Axios } from 'axios';
+import axios from 'axios';
+
 //axios default settings
-Axios.defaults.baseURL = "https://api.themoviedb.org/3";
-Axios.defaults.params = {};
-Axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.params = {};
+axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
+
 function App() {
   return (
 
