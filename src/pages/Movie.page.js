@@ -22,7 +22,22 @@ const responsive = {
     items: 1
   }
 };
-
+export const launchRazorPay = () => {
+  let options = {
+    key: "rzp_test_12tMkhfzsOm0XS",
+    amount: 500*100,
+    currency: "INR",
+    name: "Book My Show Clone",
+    description: "Movie Purchase on Rental",
+    image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+    handler: () => {
+      alert("Payment Done")
+    },
+    theme: {color: "#c4242d"}
+  };
+  let rzp = new window.Razorpay(options);
+  rzp.open();
+};
 const Movie = () => {
   return (
     <>
@@ -81,5 +96,4 @@ const Movie = () => {
     </>
   );
 };
-
 export default Movie;

@@ -1,7 +1,5 @@
-
 import React from "react";
 import Slider from "react-slick";
-
 //component
 import Poster from "../Poster/poster.component";
 

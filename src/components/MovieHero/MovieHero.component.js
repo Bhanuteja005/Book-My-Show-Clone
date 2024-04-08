@@ -1,21 +1,27 @@
 import React from "react";
-
+import { launchRazorPay } from "../../pages/Movie.page.js";
 const MovieHero = () => {
-    return (
-      <>
-     <div className="md:hidden">
-      <img
-        src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shang-chi-and-the-legend-of-the-ten-rings-et00122566-24-08-2021-02-01-36.jpg"
-        alt="poster"
-       />
-     </div>
-  
-     <div className="hidden md:block lg:hidden">
-     <img
-       src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shang-chi-and-the-legend-of-the-ten-rings-et00122566-24-08-2021-02-01-36.jpg"
-       alt="poster"
-      />
-     </div>
+  return (
+    <>
+      <div className="md:hidden">
+        <img
+          src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shang-chi-and-the-legend-of-the-ten-rings-et00122566-24-08-2021-02-01-36.jpg"
+          alt="poster"
+        />
+        <div className="md:hidden fixed bottom-0 bg-navcol-400 w-full flex justify-center items-center border-t-1">
+  <button onClick={launchRazorPay} className="bg-navcol-600 text-navcol-50 text-sm rounded px-50 py-1 h-12 w-80">Book tickets</button>
+</div>
+      </div>
+
+      <div className="hidden md:block lg:hidden">
+        <img
+          src="https://in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/shang-chi-and-the-legend-of-the-ten-rings-et00122566-24-08-2021-02-01-36.jpg"
+          alt="poster"
+        />
+        <div className="lg:hidden fixed bottom-0 bg-navcol-25 w-full flex justify-center items-center border-t-2">
+  <button onClick={launchRazorPay} className="bg-navcol-600 text-navcol-50 text-sm rounded px-50 py-1 h-12 w-80">Book tickets</button>
+</div>
+      </div>
   
      <div className="relative hidden lg:block" style={{height: "40rem"}}>
   
@@ -52,7 +58,7 @@ const MovieHero = () => {
     <p>3 Sep, 2021</p>
   </div>
   <br></br>
-  <button className="bg-navcol-600 text-white text-sm rounded px-2 py-1 h-12 w-32">Book tickets</button>
+  <button onClick={launchRazorPay} className="bg-navcol-600  text-white text-sm rounded px-2 py-1 h-12 w-32">Book tickets</button>
 </div>
   
      <img
