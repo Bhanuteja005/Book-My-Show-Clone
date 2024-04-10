@@ -11,12 +11,10 @@ import Plays from './pages/Plays.page';
 
 //axios
 import axios from 'axios';
-
 //axios default settings
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {};
-axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
-
+axios.defaults.params["api_key"] = "3efa827c10c153e415413c249bb93036";
 function App() {
   return (
 
